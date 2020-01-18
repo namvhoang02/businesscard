@@ -1,0 +1,28 @@
+sudo: true
+language: node_js
+node_js:
+- 12
+script:
+- echo "run test script here"
+cache:
+- yarn
+after_success:
+# - echo "email=namvhoang02@gmail.com" >> $HOME/.npmrc 2> /dev/null
+# - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+- npm publish
+notifications:
+  email:
+    recipients:
+    - namvhoang02@gmail.com
+    on_success: never
+    on_failure: always
+git:
+  depth: 1
+deploy:
+  provider: npm
+  email: namvhoang02@gmail.com
+  edge: true
+  api_key:
+    secure: X2/0ZBHuNUjIazoRxU1ixI7ZSkHdTK3M1GiTd64OfgLAxJ2K2gwLd4PPiaoJbX/pYqTsrP5hep78VcXAj62NPxv7OkzMa5dvg3jjGPtH11r8Nqq+E2vpvZqEd7wEtzuZw4x0d/+aouo+iJ4xoKBeYXYjQzPkmg8UqKGIbTZiO6ZTAgV4L9/fqV24j0F2L+kP101u+6u/pd5vjFOAxmH8eHkOfAlUxUMLb+nmoRjAmAr9J3UD3CahioMIngt6yM86cmhDdEchD/wXC6vr9Y4xNs4IJNmr1HXb8OgqUCXYA3jXqfPxW/reiPjeUxwMIdRneRCl+5KOxYI/lvuJTnIWD+AWOUABXUJORNVehEwtTvgsPPeuaRP5ZhziA9cmcTeAy2Jjlc3dgOLtp66d6p/j+NujE1mtc/9PiaAc7COkXwRng76FGCl7WRjKK49/dXrG+IQ9XCFVX+oIPrv1i3uphWi9UQBT8otb6Bz+cN+/LeKsTcYcN1PQ1XB8/xpzGY3qBUsfKovF2NQTopjB4jFcpZiexGFySHPEESUyaSJkw289cBzBSTroQIeYlvRe5s6TYajVrnknoG0puLw4UOVbVY1oEPKJqnnugAxg9g/sV1H1qrsVRofh+OT/VifCFRuRRQOyGb7O2j0kfwi74zAX9tw/66sYwUJzWg/xKQ/Xpoc=
+  on:
+    repo: namvhoang02/businesscard
