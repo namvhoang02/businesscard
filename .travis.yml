@@ -7,8 +7,6 @@ script:
 cache:
 - yarn
 after_success:
-# - echo "email=namvhoang02@gmail.com" >> $HOME/.npmrc 2> /dev/null
-# - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 - npm publish
 notifications:
   email:

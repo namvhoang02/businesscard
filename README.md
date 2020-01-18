@@ -1,7 +1,7 @@
-It's me, Max!
+It's me, Nam!
 
 # Usage
 
 ```
-npx mxstbr
+npx namvhoang
 ```
