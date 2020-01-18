@@ -1,6 +1,6 @@
 {
-  "name": "mxstbr",
-  "version": "1.0.1",
+  "name": "namvhoang",
+  "version": "1.0.0-rc.1",
   "description": "Max Stoiber (@mxstbr)'s business card",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mxstbr/businesscard.git"
+    "url": "https://github.com/namvhoang02/businesscard.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
