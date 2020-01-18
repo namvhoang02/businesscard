@@ -1,10 +1,10 @@
 {
   "name": "namvhoang",
-  "version": "1.0.0-rc.1",
-  "description": "Max Stoiber (@mxstbr)'s business card",
+  "version": "1.0.0-rc.2",
+  "description": "Nam Hoang (@namvhoang02)'s business card",
   "main": "index.js",
   "bin": {
-    "mxstbr": "./bin/card.js"
+    "namvhoang": "./bin/card.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
-  "author": "Max Stoiber",
+  "author": "Nam Hoang",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
