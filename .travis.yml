@@ -1,21 +1,28 @@
 sudo: true
+
 language: node_js
 node_js:
 - 12
+
 script:
 - echo "run test script here"
+
 cache:
 - yarn
+
 after_success:
 - npm publish
+
 notifications:
   email:
     recipients:
     - namvhoang02@gmail.com
     on_success: never
     on_failure: always
-git:
+
+    git:
   depth: 1
+
 deploy:
   provider: npm
   email: namvhoang02@gmail.com
@@ -24,5 +31,3 @@ deploy:
     secure: beleXGCsnFm2mCArEZDS7jjWQVNK2hqJIqJMbb4cbmsO6ujsxmDuni2zFGgIqENglhcwLjOqaphmtgDUSC2I6isf6evc6k62pMmh2/wHMoA35v100R+Gw0NzZatgXjpUkg/T54Lqt9jZarOhZIyy04QEt9/ZIH5FzaKgjxzs57yN9ESUdW5cb7zN89mg2fzoCfheBeyHyCM/3fifCvZtaw/LHNTmgWLU55vzpGe+NxEHsJWLG6ze4EO9xSjG1Ur6Aj0A27cFB6DhvMgJGRv398ArANaqbMsV3hoC4+GJVZOXRKRLA80+GRsc3DlKvdZ3I8AJKmLzvPUk7XGvcpAmBiYXjYlg0d7daXpd0xKAJD0zU/ZC6S/qljttUcBvx71/KmKQPfkaGm1Q9SiV7H2dmSMAf4uWs5KeGQiXyyhyJe2RupIFZFysJwHoOTud3sTdO62adtaSluoX4k+xn+cY/aS+1gMYTeDTfJx3I4VWxyY1Zv4U5jIVuNzn8A9U0C8d/Rwh+GbBFCUe5aCHZ7L7g1Mteeh2T0bjgebdkf5LOx8cprRPJgjw9shsny2KpV5YEJJIt8cF9HaPIkjgHMSOllJiebJ74ibWHmV5Nv8ieku0Gbgm5d0uCYoNrsrBL3CGCcJwH9OlJ5/Wu1geTLtf01VMwaEP7rolkowc7ZzR9qA=
   on:
     repo: namvhoang02/businesscard
-    all_branches: true
-    # tags: true
