@@ -3,5 +3,5 @@ It's me, Nam!
 # Usage
 
 ```
-npx namvhoang
+npx namvhoang02
 ```
