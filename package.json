@@ -1,6 +1,6 @@
 {
   "name": "namvhoang02",
-  "version": "1.0.0-rc.5",
+  "version": "1.0.0",
   "description": "Nam Hoang (@namvhoang02)'s business card",
   "main": "index.js",
   "bin": {
