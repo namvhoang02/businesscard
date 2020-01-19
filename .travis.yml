@@ -25,3 +25,4 @@ deploy:
   on:
     repo: namvhoang02/businesscard
     all_branches: true
+    # tags: true
