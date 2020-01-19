@@ -1,10 +1,10 @@
 {
-  "name": "namvhoang",
-  "version": "1.0.0-rc.3",
+  "name": "namvhoang02",
+  "version": "1.0.0-rc.4",
   "description": "Nam Hoang (@namvhoang02)'s business card",
   "main": "index.js",
   "bin": {
-    "namvhoang": "./bin/card.js"
+    "namvhoang02": "./bin/card.js"
   },
   "repository": {
     "type": "git",
